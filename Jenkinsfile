@@ -1,6 +1,7 @@
 pipeline {
   agent any
   stages {
+    parameter()
     stage('error') {
       parallel {
         stage('error') {
