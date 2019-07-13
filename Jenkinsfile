@@ -21,4 +21,8 @@ pipeline {
       }
     }
   }
+  environment {
+    abc = '1'
+    cde = 'true'
+  }
 }
