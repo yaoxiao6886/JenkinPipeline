@@ -1,13 +1,13 @@
 pipeline {
   agent any
+  parameters{
+      choice(
+         name: 'door_choice',
+         choices: 'one\ntwo',
+         description: 'door'            
+      )
+  }
   stages {
-    parameters{
-        choice(
-            name: 'door_choice',
-            choices: 'one\ntwo',
-            description: 'door'            
-        )
-    }
     stage('error') {
       parallel {
         stage('error') {
