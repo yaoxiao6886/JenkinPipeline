@@ -3,7 +3,7 @@ pipeline {
   parameters{
       choice(
          name: 'door_choice',
-         choices: 'one\ntwo\nthree\nfour\nfive\nsix',
+         choices: 'one\ntwo\nthree\nfour\nfive\nsix\nseven',
          description: 'door'            
       )
   }
